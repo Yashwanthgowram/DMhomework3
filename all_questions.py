@@ -254,7 +254,7 @@ def question8():
     answers = {}
 
     # type: string
-    answers["(a) Matrix 1"] = ""
+    answers["(a) Matrix 1"] = "Dataset Z"
 
     # type: explanatory string (at least four words)
     answers["(a) explain diag entries, Matrix 1"] = ""
@@ -263,7 +263,7 @@ def question8():
     answers["(a) explain non-diag entries, Matrix 1"] = ""
 
     # type: string
-    answers["(a) Matrix 2"] = ""
+    answers["(a) Matrix 2"] = "Dataset X"
 
     # type: explanatory string (at least four words)
     answers["(a) explain diag entries, Matrix 2"] = ""
@@ -272,7 +272,7 @@ def question8():
     answers["(a) explain non-diag entries, Matrix 2"] = ""
 
     # type: string
-    answers["(a) Matrix 3"] = ""
+    answers["(a) Matrix 3"] = "Dataset Y"
 
     # type: explanatory string (at least four words)
     answers["(a) explain diag entries, Matrix 3"] = ""
@@ -281,16 +281,16 @@ def question8():
     answers["(a) explain non-diag entries, Matrix 3"] = ""
 
     # type: string
-    answers["(b) Row 1"] = ""
+    answers["(b) Row 1"] = "Cluster A"
 
     # type: string
-    answers["(b) Row 2"] = ""
+    answers["(b) Row 2"] = "Cluster B"
 
     # type: string
-    answers["(b) Row 3"] = ""
+    answers["(b) Row 3"] = "Cluster C"
 
     # type: string
-    answers["(b) Row 4"] = ""
+    answers["(b) Row 4"] = "Cluster D"
 
     # type: explanatory string (at least four words)
     answers["(b) Row 1 explain"] = ""
@@ -341,25 +341,25 @@ def question10():
     answers = {}
 
     # type: string
-    answers["(a) Figure (a)"] = ""
+    answers["(a) Figure (a)"] = "No"
 
     # type: string
-    answers["(a) Figure (b)"] = ""
+    answers["(a) Figure (b)"] = "Yes"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "The suitability of DBSCAN is apparent in scenario (b) where the tightly clustered points representing the nose, eyes, and mouth facilitate accurate identification by DBSCAN. In contrast, in scenario (a), the abundance of noise obscures the relevant facial features, resulting in DBSCAN's exclusion of the nose, eyes, and mouth."
 
     # type: string
-    answers["(b) Figure (a)"] = ""
+    answers["(b) Figure (a)"] = "No"
 
     # type: string
-    answers["(b) Figure (b)"] = ""
+    answers["(b) Figure (b)"] = "yes"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "For scenario (b), K-means can be employed with four clusters to adequately capture significant facial features such as the nose, eyes, and mouth, albeit at the risk of including lower density points. However, K-means is not suited for scenario (a)."
 
     # type: string
-    answers["(c)"] = ""
+    answers["(c)"] = "DBSCAN is more appropriate for detecting the facial features in both figures since it does not assume any cluster shape and can handle noise effectively"
 
     return answers
 
