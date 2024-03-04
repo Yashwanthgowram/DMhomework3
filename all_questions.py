@@ -8,58 +8,58 @@ def question1():
     answers = {}
 
     # type: bool (True/False)
-    answers["(a)"] = -1
+    answers["(a)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "Agglomerative hierarchical clustering can incorporate outliers into clusters based on the chosen linkage criterion without heavily influencing the cluster's overall structure, whereas k-means is sensitive to outliers as they can significantly affect the mean calculation of clusters."
 
     # type: bool (True/False)
-    answers["(b)"] = -1
+    answers["(b)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = " K-means clustering results can vary due to random initialization of centroids, leading to different outcomes in different runs. In contrast, agglomerative hierarchical clustering procedures are deterministic, producing the same clustering if the same dataset and parameters are used."
 
     # type: bool (True/False)
-    answers["(c)"] = -1
+    answers["(c)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = ""
+    answers["(c) explain"] = "While k-means is generally faster and more memory-efficient than agglomerative hierarchical clustering for large datasets, it is not the most efficient clustering algorithm in all cases. The efficiency depends on the dataset size, dimensions, and the specific implementation."
 
     # type: bool (True/False)
-    answers["(d)"] = -1
+    answers["(d)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(d) explain"] = ""
+    answers["(d) explain"] = "Splitting a cluster and reassigning points can lead to a more accurate representation of the data, thus reducing the Sum of Squared Errors (SSE)."
 
     # type: bool (True/False)
-    answers["(e)"] = -1
+    answers["(e)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(e) explain"] = ""
+    answers["(e) explain"] = "A decrease in SSE indicates that data points are closer to their respective centroids, implying increased cohesion within clusters."
 
     # type: bool (True/False)
-    answers["(f)"] = -1
+    answers["(f)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(f) explain"] = ""
+    answers["(f) explain"] = "An increase in SSB indicates that clusters are further apart from each other, which means that separation between clusters has increased."
 
     # type: bool (True/False)
-    answers["(g)"] = -1
+    answers["(g)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(g) explain"] = ""
+    answers["(g) explain"] = "Improving cohesion (reducing SSE) by making clusters tighter does not guarantee that clusters will be more separated (increased SSB), as these are independent aspects of cluster quality."
 
     # type: bool (True/False)
-    answers["(h)"] = -1
+    answers["(h)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(h) explain"] = ""
+    answers["(h) explain"] = "The total variance (SSE + BSS) is not necessarily a constant as the partitioning of data changes, affecting both within-cluster variance (SSE) and between-cluster variance (BSS)."
 
     # type: bool (True/False)
-    answers["(i)"] = -1
+    answers["(i)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(i) explain"] = ""
+    answers["(i) explain"] = "Increasing cohesion by making clusters tighter does not inherently lead to increased separation between clusters; these are independent measures."
 
     return answers
 
@@ -71,22 +71,22 @@ def question2():
     answers = {}
 
     # type: bool (True/False)
-    answers["(a)"] = -1
+    answers["(a)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "There is a significant distance between the two shaded circles, which will prevent the centroids from migrating away from their initial cluster areas."
 
     # type: bool (True/False)
-    answers["(b)"] = -1
+    answers["(b)"] = False
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = " the k-means algorithm will adjust the centroids to the center of these densities. it is likely that points from one crescent would be closer to the centroid of the other crescent."
 
     # type: bool (True/False)
-    answers["(c)"] = -1
+    answers["(c)"] = True
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = ""
+    answers["(c) explain"] = "The initial centroids are positioned in such a way that one centroid is closer to all data points than the other, which results in all points being assigned to the nearest centroid, leaving the other centroid with no points, hence an empty cluster."
 
     return answers
 
@@ -98,13 +98,13 @@ def question3():
     answers = {}
 
     # type: a string that evaluates to a float
-    answers["(a) SSE"] = 7.5
+    answers["(a) SSE"] = "(R^2)*4"
 
     # type: a string that evaluates to a float
-    answers["(b) SSE"] = 7.5
+    answers["(b) SSE"] = "4*((a*a) + (b*b) + (c*c))"
 
     # type: a string that evaluates to a float
-    answers["(c) SSE"] = 7.5
+    answers["(c) SSE"] = "4*((R^2) + ((R/2)^2))"
 
     return answers
 
@@ -116,28 +116,28 @@ def question4():
     answers = {}
 
     # type: int
-    answers["(a) Circle (a)"] = 0
+    answers["(a) Circle (a)"] = 1
 
     # type: int
-    answers["(a) Circle (b)"] = 0
+    answers["(a) Circle (b)"] = 1
 
     # type: int
-    answers["(a) Circle (c)"] = 0
+    answers["(a) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "Due to the uniform distribution of points and the distances between the circles, each centroid is likely to settle in the center of the circle where it was initially placed."
 
     # type: int
-    answers["(b) Circle (a)"] = 0
+    answers["(b) Circle (a)"] = 1
 
     # type: int
-    answers["(b) Circle (b)"] = 0
+    answers["(b) Circle (b)"] = 1
 
     # type: int
-    answers["(b) Circle (c)"] = 0
+    answers["(b) Circle (c)"] = 1
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "There is no centroid in circle C,  the K-means algorithm will move the closest centroid into Circle C to minimize the distance to points there, resulting in one centroid per circle after convergence."
 
     # type: int
     answers["(c) Circle (a)"] = 0
@@ -146,10 +146,10 @@ def question4():
     answers["(c) Circle (b)"] = 0
 
     # type: int
-    answers["(c) Circle (c)"] = 0
+    answers["(c) Circle (c)"] = 2
 
     # type: explanatory string (at least four words)
-    answers["(c) explain"] = ""
+    answers["(c) explain"] = "The overwhelming number of points in circle C will attract both centroids towards it, due to the algorithm’s objective to minimize within-cluster variance, leaving circles A and B with no centroids after convergence"
 
     return answers
 
