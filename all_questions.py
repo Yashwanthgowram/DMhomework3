@@ -161,16 +161,16 @@ def question5():
     answers = {}
 
     # type: set
-    answers["(a)"] = set()
+    answers["(a)"] = {'Group A', 'Group B'}
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "the nearest points between Group A and B are closer than any point in Group C to another group."
 
     # type: set
-    answers["(b)"] = set()
+    answers["(b)"] = {'Group A', 'Group C'}
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "Complete link clustering merges the clusters with the smallest maximum distance between their farthest apart members. Visually, the farthest members of Group A and Group C are closer than those of Group B to either A or C, leading to their merger."
 
     return answers
 
@@ -182,19 +182,19 @@ def question6():
     answers = {}
 
     # type: set
-    answers["(a) core"] = set()
+    answers["(a) core"] = {'B', 'C', 'E', 'F', 'I', 'J', 'L', 'M'}
 
     # type: set
-    answers["(a) boundary"] = set()
+    answers["(a) boundary"] = {'D', 'G'}
 
     # type: set
-    answers["(a) noise"] = set()
+    answers["(a) noise"] = {'A', 'H'}
 
     # type: set
-    answers["(b) cluster 1"] = set()
+    answers["(b) cluster 1"] = {'B','C','D','E','F','G'}
 
     # type: set
-    answers["(b) cluster 2"] = set()
+    answers["(b) cluster 2"] = {'I','J','L','M'}
 
     # type: set
     answers["(b) cluster 3"] = set()
@@ -203,19 +203,19 @@ def question6():
     answers["(b) cluster 4"] = set()
 
     # type: set
-    answers["(c)-a core"] = set()
+    answers["(c)-a core"] = {'I', 'G', 'J', 'E', 'M', 'B', 'L', 'F', 'D', 'C'}
 
     # type: set
-    answers["(c)-a boundary"] = set()
+    answers["(c)-a boundary"] = {'A', 'H'}
 
     # type: set
     answers["(c)-a noise"] = set()
 
     # type: set
-    answers["(c)-b cluster 1"] = set()
+    answers["(c)-b cluster 1"] = {'G', 'I', 'H', 'J', 'E', 'M', 'B', 'D', 'F', 'L', 'C'}
 
     # type: set
-    answers["(c)-b cluster 2"] = set()
+    answers["(c)-b cluster 2"] = {'A'}
 
     # type: set
     answers["(c)-b cluster 3"] = set()
@@ -233,16 +233,16 @@ def question7():
     answers = {}
 
     # type: string
-    answers["(a)"] = ""
+    answers["(a)"] = "Cluster 4"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain"] = ""
+    answers["(a) explain"] = "The elevated entropy observed in Cluster 4 is attributed to a more uniform distribution of categories."
 
     # type: string
-    answers["(b)"] = ""
+    answers["(b)"] = "Cluster 1"
 
     # type: explanatory string (at least four words)
-    answers["(b) explain"] = ""
+    answers["(b) explain"] = "The low entropy observed in Cluster 1 is a consequence of its unequal distribution, with the majority of data points clustered within one category, thus reflecting a high degree of homogeneity."
 
     return answers
 
@@ -314,22 +314,22 @@ def question9():
     answers = {}
 
     # type: list
-    answers["(a)"] = []
+    answers["(a)"] = ['Hierarchical', 'Partial', 'Overlapping']
 
     # type: list
-    answers["(b)"] = []
+    answers["(b)"] = ['Partitional', 'Exclusive', 'Complete']
 
     # type: list
-    answers["(c)"] = []
+    answers["(c)"] = ['Partitional', 'fuzzy', 'complete']
 
     # type: list
-    answers["(d)"] = []
+    answers["(d)"] = ['Hierarchical', 'overlapping', 'partial']
 
     # type: list
-    answers["(e)"] = []
+    answers["(e)"] = ['Partitional', 'Exclusive', 'Complete']
 
     # type: explanatory string (at least four words)
-    answers["(e) explain"] = ""
+    answers["(e) explain"] = "The assignment of letter grades maintains distinct and non-overlapping categories, ensuring that each student receives only one grade per class (exclusive), and all students in the class receive a grade (complete)."
 
     return answers
 
