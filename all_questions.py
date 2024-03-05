@@ -257,28 +257,28 @@ def question8():
     answers["(a) Matrix 1"] = "Dataset Z"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 1"] = ""
+    answers["(a) explain diag entries, Matrix 1"] = "High cohesion within clusters B and C indicated by intense blue squares on the diagonal."
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 1"] = ""
+    answers["(a) explain non-diag entries, Matrix 1"] = "Varying distances between clusters shown by the gradient from blue to red off-diagonal, matching the spatial arrangement in Dataset Z."
 
     # type: string
     answers["(a) Matrix 2"] = "Dataset X"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 2"] = ""
+    answers["(a) explain diag entries, Matrix 2"] = "Uniform low distances within clusters reflect the even spread and similar density in Dataset X"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 2"] = ""
+    answers["(a) explain non-diag entries, Matrix 2"] = "Consistent distances between clusters suggest a uniform layout, correlating with the distribution in Dataset X."
 
     # type: string
     answers["(a) Matrix 3"] = "Dataset Y"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 3"] = ""
+    answers["(a) explain diag entries, Matrix 3"] = "Diagonal variations represent clusters with different densities and separations, as seen in Dataset Y"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 3"] = ""
+    answers["(a) explain non-diag entries, Matrix 3"] = "One cluster is far separated from others, with significant distance differences, aligning with the layout in Dataset Y."
 
     # type: string
     answers["(b) Row 1"] = "Cluster A"
@@ -293,16 +293,16 @@ def question8():
     answers["(b) Row 4"] = "Cluster D"
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 1 explain"] = ""
+    answers["(b) Row 1 explain"] = "Closest to itself and moderately distant to other clusters, as indicated by the matrix."
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 2 explain"] = ""
+    answers["(b) Row 2 explain"] = "Intermediate distances to other clusters, reflecting its central position in the matrix"
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 3 explain"] = ""
+    answers["(b) Row 3 explain"] = "Greater distances to at least one other cluster, showing it is further apart in the matrix."
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 4 explain"] = ""
+    answers["(b) Row 4 explain"] = "Highest distances to all other clusters, indicating it is the most isolated in the matrix."
 
     return answers
 
