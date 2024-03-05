@@ -26,7 +26,7 @@ def question1():
     answers["(c) explain"] = "While k-means is generally faster and more memory-efficient than agglomerative hierarchical clustering for large datasets, it is not the most efficient clustering algorithm in all cases. The efficiency depends on the dataset size, dimensions, and the specific implementation."
 
     # type: bool (True/False)
-    answers["(d)"] = False
+    answers["(d)"] = True
 
     # type: explanatory string (at least four words)
     answers["(d) explain"] = "Splitting a cluster and reassigning points can lead to a more accurate representation of the data, thus reducing the Sum of Squared Errors (SSE)."
@@ -257,28 +257,28 @@ def question8():
     answers["(a) Matrix 1"] = "Dataset Z"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 1"] = "High cohesion within clusters B and C indicated by intense blue squares on the diagonal."
+    answers["(a) explain diag entries, Matrix 1"] = "The distinct blue blocks on the diagonal indicate high cohesion within clusters B and C, as seen in Dataset Z."
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 1"] = "Varying distances between clusters shown by the gradient from blue to red off-diagonal, matching the spatial arrangement in Dataset Z."
+    answers["(a) explain non-diag entries, Matrix 1"] = "Variation in off-diagonal colors represents distances between different clusters, matching the spatial distribution in Dataset Z."
 
     # type: string
     answers["(a) Matrix 2"] = "Dataset X"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 2"] = "Uniform low distances within clusters reflect the even spread and similar density in Dataset X"
+    answers["(a) explain diag entries, Matrix 2"] = "Uniform blue diagonal suggests even cluster density, corresponding to the clusters in Dataset X."
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 2"] = "Consistent distances between clusters suggest a uniform layout, correlating with the distribution in Dataset X."
+    answers["(a) explain non-diag entries, Matrix 2"] = "Consistent off-diagonal colors indicate uniform distances between clusters, aligning with Dataset X's structure."
 
     # type: string
     answers["(a) Matrix 3"] = "Dataset Y"
 
     # type: explanatory string (at least four words)
-    answers["(a) explain diag entries, Matrix 3"] = "Diagonal variations represent clusters with different densities and separations, as seen in Dataset Y"
+    answers["(a) explain diag entries, Matrix 3"] = "Mixed diagonal colors suggest variable cluster cohesion, reflecting the clusters' varied density in Dataset Y."
 
     # type: explanatory string (at least four words)
-    answers["(a) explain non-diag entries, Matrix 3"] = "One cluster is far separated from others, with significant distance differences, aligning with the layout in Dataset Y."
+    answers["(a) explain non-diag entries, Matrix 3"] = "Different off-diagonal color patterns suggest varying distances between clusters, as seen in Dataset Y."
 
     # type: string
     answers["(b) Row 1"] = "Cluster A"
@@ -293,16 +293,16 @@ def question8():
     answers["(b) Row 4"] = "Cluster D"
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 1 explain"] = "Closest to itself and moderately distant to other clusters, as indicated by the matrix."
+    answers["(b) Row 1 explain"] = "Cluster A is less cohesive and has varying distances to other clusters, which can be inferred from the non-uniform colors in its row."
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 2 explain"] = "Intermediate distances to other clusters, reflecting its central position in the matrix"
+    answers["(b) Row 2 explain"] = "Cluster B shows high cohesion with two other clusters at a similar distance, as indicated by the two similar off-diagonal colors."
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 3 explain"] = "Greater distances to at least one other cluster, showing it is further apart in the matrix."
+    answers["(b) Row 3 explain"] = "Similar to Cluster B, Cluster C also shows high cohesion and equal distance to two clusters, depicted by the off-diagonal colors."
 
     # type: explanatory string (at least four words)
-    answers["(b) Row 4 explain"] = "Highest distances to all other clusters, indicating it is the most isolated in the matrix."
+    answers["(b) Row 4 explain"] = "Cluster D is similar to Cluster A in terms of cohesion and distance to other clusters but in an inverted order."
 
     return answers
 
